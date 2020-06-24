@@ -1,0 +1,18 @@
+# system helpers
+htop
+vim
+curl
+wget
+net-tools
+
+# mysql/mariadb packages
+libaio1 
+libaio-dev
+numactl
+libncurses5
+
+
+#phpmyadmin
+php
+apache2
+phpmyadmin
