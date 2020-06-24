@@ -64,7 +64,8 @@ export MYSQL_HOME=$(pwd)/mysql-${MYSQL_VERSION}
 echo "export MYSQL_HOME=${MYSQL_HOME}"       >> ~/.bashrc
 echo "export MYSQL_HOME=${MYSQL_HOME}"       >> ~/.profile
 
-wget https://cdn.mysql.com/Downloads/MySQL-8.0/mysql-${MYSQL_VERSION}-linux-x86_64-minimal.tar.xz -q  && \
+       
+wget https://cdn.mysql.com/archives/mysql-8.0/mysql-${MYSQL_VERSION}-linux-x86_64-minimal.tar.xz -q  && \
 tar -xf mysql-${MYSQL_VERSION}-linux-x86_64-minimal.tar.xz >> /dev/null                                && \
 rm      mysql-${MYSQL_VERSION}-linux-x86_64-minimal.tar.xz                                             && \
 mv      mysql-${MYSQL_VERSION}-linux-x86_64-minimal        mysql-${MYSQL_VERSION} 
