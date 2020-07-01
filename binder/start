@@ -8,6 +8,13 @@ chmod +x ~/binder/start.mysql
 ~/binder/start.mysql   &
 
 
+code-server --install-extension formulahendry.vscode-mysql
+code-server --install-extension jakebathman.mysql-syntax
+code-server --install-extension mtxr.sqltools
+code-server .  --auth none &
+
+
+
 # DO NOT REMOVE(!) 
 # Here is why: https://mybinder.readthedocs.io/en/latest/config_files.html#start-run-code-before-the-user-sessions-starts
 exec "$@"
