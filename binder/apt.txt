@@ -5,6 +5,10 @@ curl
 wget
 net-tools
 
+# beakerx dependencies
+#openjdk-8-jdk
+#maven
+
 # mysql/mariadb packages
 libaio1 
 libaio-dev
@@ -12,7 +16,7 @@ numactl
 libncurses5
 
 
+# phpmyadmin (/to do)
+#php
+#apache2
 #phpmyadmin
-php
-apache2
-phpmyadmin
