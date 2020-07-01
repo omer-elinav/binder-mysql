@@ -32,10 +32,7 @@ A repository template for launching specific interfaces on [binderhub](https://g
 - [Launching this repository on a binderhub instance](#launching-this-repository-on-a-binderhub-instance)
   - [Jupyter](#jupyter)
   - [JupyterLab](#jupyterlab)
-  - [Rstudio](#rstudio)
-  - [Shiny](#shiny)
-  - [Nteract](#nteract)
-  - [Stencila](#stencila)
+  - [Visual Studio Code](#vscode)
 - [Launching this repository locally using repo2docker](#launching-this-repository-locally-using-repo2docker)
 - [Contributing](#contributing)
 - [License](#license)
@@ -48,16 +45,22 @@ A repository template for launching specific interfaces on [binderhub](https://g
 [Binderhub](https://github.com/jupyterhub/binderhub) uses [repo2docker](https://github.com/jupyter/repo2docker) for launching and serving the computational environments. Repo2docker supports the following interfaces: 
 - [Jupyter](https://jupyter.org/)
 - [JupyterLab](https://github.com/jupyterlab/jupyterlab)
-- [Rstudio](https://rstudio.com/)
-- [Nteract](https://nteract.io/)
-- [Shiny](https://shiny.rstudio.com/)
-- [Stencila](https://stenci.la/)
+- [VSCode](https://code.visualstudio.com)
 
 The list below contains the known binderhub instances.
+
+[My Binder Federation](https://binderhub.readthedocs.io/en/latest/federation/federation.html):
+
 - [gke.mybinder.org](gke.mybinder.org)
 - [ovh.mybinder.org](ovh.mybinder.org)
-- [binder.gesis.org](binder.gesis.org)
+- [turing.mybinder.org](turing.mybinder.org)
+- [gesis.mybinder.org](binder.gesis.org)
+
+Other instances:
+
 - [binder.pangeo.io](binder.pangeo.io)
+
+
 
 The list below provides the badges and the hyperlinks for launching one of the specific interfaces in one of the binderhub instances.
     
