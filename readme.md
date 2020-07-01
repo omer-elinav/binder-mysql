@@ -21,9 +21,9 @@
 </div>
 <!-- /ds header -->
 
-# binderhub-template
+# binderhub-mysql sandbox
 
-A repository template for launching specific interfaces on [binderhub](https://github.com/jupyterhub/binderhub) instances.
+A binderhub-ready repository template for launching specific interfaces on [binderhub](https://github.com/jupyterhub/binderhub) instances while running a MySQL server.
 
 ## Table of contents
 
