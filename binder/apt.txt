@@ -17,6 +17,8 @@ libncurses5
 
 
 # phpmyadmin (/to do)
-#php
-#apache2
-#phpmyadmin
+php
+apache2
+phpmyadmin
+php-mbstring 
+php-gettext 
