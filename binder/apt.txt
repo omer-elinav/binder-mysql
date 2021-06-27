@@ -17,6 +17,7 @@ libncurses5
 
 
 # phpmyadmin (/to do)
+mariadb-server
 php
 apache2
 phpmyadmin
