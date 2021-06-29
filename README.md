@@ -21,7 +21,7 @@
 </div>
 <!-- /ds header -->
 
-# Running MySQL or MariaDB at BinderHub
+## Running MySQL or MariaDB at BinderHub
 
 A binderhub-ready repository template for launching specific interfaces on [binderhub](https://github.com/jupyterhub/binderhub) instances while running a MySQL server.
 
