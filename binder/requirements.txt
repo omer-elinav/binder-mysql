@@ -14,9 +14,8 @@ jupyterlab_sql
 mysqlclient
 
 # jupyter/jupyterlab extensions
-jupyterlab
 jupyter-server-proxy
-
+mariadb_kernel
 
 #vscode
 numpy

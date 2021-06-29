@@ -27,7 +27,7 @@ jupyter labextension install @jupyterlab/toc --no-build
 
 # Building everything up
 echo "Building everything up (jupyter lab build)"
-jupyter lab build 
+# jupyter lab build 
 
 ###############################################################
 #             moving to a local installation folder           #
@@ -38,7 +38,7 @@ cd    ~/resources/local
 
 
 ###############################################################
-#             mysql/mariadb install                           #
+#             mariadb installation                           #
 ###############################################################
 
 # export MARIADB_VERSION=10.4.6
@@ -59,7 +59,7 @@ cd    ~/resources/local
 # echo "export PATH=\$PATH:\$MARIADB_HOME/bin"     >> ~/.profile
 
 ###############################################################
-#             mysql minimal installation commands             #
+#             mysql-minimal installation                      #
 ###############################################################
 
 export MYSQL_VERSION=8.0.17
@@ -69,7 +69,6 @@ echo "export MYSQL_VERSION=${MYSQL_VERSION}" >> ~/.profile
 export MYSQL_HOME=$(pwd)/mysql-${MYSQL_VERSION}
 echo "export MYSQL_HOME=${MYSQL_HOME}"       >> ~/.bashrc
 echo "export MYSQL_HOME=${MYSQL_HOME}"       >> ~/.profile
-
        
 wget https://cdn.mysql.com/archives/mysql-8.0/mysql-${MYSQL_VERSION}-linux-x86_64-minimal.tar.xz -q  && \
 tar -xf mysql-${MYSQL_VERSION}-linux-x86_64-minimal.tar.xz >> /dev/null                              && \
@@ -83,27 +82,26 @@ echo "export PATH=\$PATH:\$MYSQL_HOME/bin"   >> ~/.profile
 
 
 ###############################################################
-#             vscode installation commands                    #
+#             vscode/code-server installation                 #
+#             Replaced by vscode-proxy-plugin                 #
 ###############################################################
 
 
-export CODE_SERVER_VERSION=3.4.1
-echo "export CODE_SERVER_VERSION=${CODE_SERVER_VERSION}" >> ~/.bashrc
-echo "export CODE_SERVER_VERSION=${CODE_SERVER_VERSION}" >> ~/.profile
+# export CODE_SERVER_VERSION=3.4.1
+# echo "export CODE_SERVER_VERSION=${CODE_SERVER_VERSION}" >> ~/.bashrc
+# echo "export CODE_SERVER_VERSION=${CODE_SERVER_VERSION}" >> ~/.profile
 
-export CODE_SERVER_HOME=$(pwd)/code-server-${CODE_SERVER_VERSION}
-echo "export CODE_SERVER_HOME=${CODE_SERVER_HOME}"       >> ~/.bashrc
-echo "export CODE_SERVER_HOME=${CODE_SERVER_HOME}"       >> ~/.profile
-
-
-# Download and install VS Code server
-wget -q -O code-server.tar.gz https://github.com/cdr/code-server/releases/download/$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-x86_64.tar.gz                            
-tar xzf code-server.tar.gz
-mv code-server-${CODE_SERVER_VERSION}-linux-x86_64 code-server-$CODE_SERVER_VERSION
-rm -rf code-server.tar.gz
-
-# adding bin/ to $path
-echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.bashrc
-echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.profile
+# export CODE_SERVER_HOME=$(pwd)/code-server-${CODE_SERVER_VERSION}
+# echo "export CODE_SERVER_HOME=${CODE_SERVER_HOME}"       >> ~/.bashrc
+# echo "export CODE_SERVER_HOME=${CODE_SERVER_HOME}"       >> ~/.profile
 
 
+# # Download and install VS Code server
+# wget -q -O code-server.tar.gz https://github.com/cdr/code-server/releases/download/$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-x86_64.tar.gz                            
+# tar xzf code-server.tar.gz
+# mv code-server-${CODE_SERVER_VERSION}-linux-x86_64 code-server-$CODE_SERVER_VERSION
+# rm -rf code-server.tar.gz
+
+# # adding bin/ to $path
+# echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.bashrc
+# echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.profile

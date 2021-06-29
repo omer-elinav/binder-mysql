@@ -1,18 +1,17 @@
 #!/bin/bash
 
-
+# manking start files executable
 chmod +x ~/binder/start.mysql 
-#chmod +x ~/binder/start.mariadb 
-
-# starting mysql in parallel
-~/binder/start.mysql   &
+chmod +x ~/binder/start.mariadb 
+chmod +x ~/binder/start.vscode 
 
 
-code-server --install-extension formulahendry.vscode-mysql
-code-server --install-extension jakebathman.mysql-syntax
-code-server --install-extension mtxr.sqltools
-code-server .  --auth none &
+# starting mysql or mariadb in parallel
+# ~/binder/start.mysql   &
+#~/binder/start.mysql   &
 
+# starting vscode in parallel
+# ~/binder/start.vscode   &
 
 
 # DO NOT REMOVE(!) 
