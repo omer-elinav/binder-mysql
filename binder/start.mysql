@@ -5,7 +5,7 @@
 
 mysqld  --user=${USER} --initialize-insecure --skip-grant-tables --skip-networking --skip-mysqlx 
 
-sleep 10
+sleep 15
 
 mysqld_safe --user=${USER} &
 
