@@ -8,10 +8,6 @@ ipython-sql
 jupyterlab_sql
 mysqlclient
 
-# jupyter/jupyterlab extensions
-jupyter-server-proxy
-mariadb_kernel
-
-#vscode
-numpy
-jupyter-vscode-proxy
+xeus-sql=0.1.5
+soci-mysql
+soci-core
