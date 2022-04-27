@@ -1,0 +1,7 @@
+name: sql tutorial
+channels:
+  - conda-forge
+dependencies:
+  - xeus-sql=0.1.5
+  - soci-mysql
+  - soci-core
